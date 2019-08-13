@@ -10,12 +10,12 @@
 //     Goods obj1;
 //     Goods obj2;
 //     ...
-//     tobuylist.PushList(obj1);
-//     tobuylist.PushList(obj2);
+//     tobuylist.PushElement(obj1);
+//     tobuylist.PushElement(obj2);
 //     tobuylist.PrintList();
 class Shopping{
  public:
-  void PushList(Goods object);
+  void PushElement(Goods object);
   Goods GetLastElement();
   void PrintList();
   void SortByPrice();
