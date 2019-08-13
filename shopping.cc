@@ -1,17 +1,17 @@
 #include <iostream>
 #include "./shopping.h"
 
-// Push Goods object to shopping_list_ vector
-void Shopping::PushList(Goods object) {
+// Push Goods object to list
+void Shopping::PushElement(Goods object) {
   shopping_list_.push_back(object);
 }
 
-// Get Goods object from end of shopping_list_ vector
+// Get Goods object from end of list vector
 Goods Shopping::GetLastElement() {
   return shopping_list_.back();
 }
 
-// Print shopping_list_ Elements
+// Print list Elements
 void Shopping::PrintList() {
   for (std::vector<Goods>::iterator i = shopping_list_.begin();
       i != shopping_list_.end(); i++) {
@@ -20,7 +20,7 @@ void Shopping::PrintList() {
   }
 }
 
-// Sort shopping_list_ Elements by Price
+// Sort list Elements by Price
 // Apply Selection Sort algorithm
 void Shopping::SortByPrice() {
   std::vector<Goods>::iterator p = shopping_list_.begin();
@@ -41,7 +41,7 @@ void Shopping::SortByPrice() {
   }
 }
 
-// Sort shopping_list_ Elements by Index
+// Sort list Elements by Index
 // Apply Selection Sort algorithm
 void Shopping::SortByIndex() {
   std::vector<Goods>::iterator p = shopping_list_.begin();
