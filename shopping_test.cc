@@ -34,11 +34,11 @@ TEST(shopping_list_test, shopping_object_test) {
   goods_test_object4.SetGoodsInfo(4, 49900);
   goods_test_object5.SetGoodsInfo(2, 30000);
 
-  shopping_object.PushList(goods_test_object1);
-  shopping_object.PushList(goods_test_object2);
-  shopping_object.PushList(goods_test_object3);
-  shopping_object.PushList(goods_test_object4);
-  shopping_object.PushList(goods_test_object5);
+  shopping_object.PushElement(goods_test_object1);
+  shopping_object.PushElement(goods_test_object2);
+  shopping_object.PushElement(goods_test_object3);
+  shopping_object.PushElement(goods_test_object4);
+  shopping_object.PushElement(goods_test_object5);
 
   // Test 0 - Last element test
   EXPECT_EQ((shopping_object.GetLastElement()).GetPrice(), 30000);
